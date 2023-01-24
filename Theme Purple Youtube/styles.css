@@ -1,0 +1,293 @@
+:root {
+  --background-color: #9b3cf5cb;
+  --svg:black ;
+  --icon:red ;
+  --font:#f1f1f1;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #9b3cf5 !important;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #9b3cf5 !important;
+  border-radius: 10px;
+  border: 3px solid transparent !important;
+}
+
+#button.ytd-menu-renderer yt-icon.ytd-menu-renderer {
+  background-image: url(chrome-extension://__MSG_@@extension_id__/svg/apple-food-grocery.svg) !important;
+}
+
+#button.ytd-menu-renderer yt-icon.ytd-menu-renderer svg g {
+  display: none !important;
+}
+
+#player-container-outer {
+  box-shadow: none;
+  border: none;
+}
+
+#player-container-outer:hover {
+  box-shadow: 0px 0px 20px 4px #fbd200;
+  border: 2px solid #fbd200;
+  /*animation: animate 8s linear infinite;*/
+}
+
+#footer-text.ytd-commentbox {
+  text-align: right !important;
+}
+
+.ytp-swatch-background-color {
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+.ytp-swatch-background-color:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #fbd200, #52dd3d, #1996d7, #ed0074);
+  background-size: 400%;
+  filter: blur(5px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.ytp-swatch-background-color:before {
+  filter: blur(5px);
+  opacity: 1;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+.ytd-searchbox:hover {
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.ytd-searchbox:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #fbd200, #52dd3d, #1996d7, #ed0074);
+  background-size: 400%;
+  filter: blur(30px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.ytd-searchbox:hover:before {
+  filter: blur(30px);
+  opacity: 1;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+.glow:hover {
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+.glow:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #fbd200, #52dd3d, #1996d7, #ed0074);
+  background-size: 400%;
+  filter: blur(30px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.glow:hover:before {
+  filter: blur(30px);
+  opacity: 1;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+#container.ytd-masthead {
+  background-color: var(--background-color);
+  box-shadow: 7px 4px 33px -4px rgba(0, 0, 0, 0.75);
+}
+
+#sections.ytd-guide-renderer {
+  background-color: var(--background-color);
+}
+
+.guide-icon.ytd-guide-entry-renderer {
+  color: var(--svg) !important;
+}
+
+#header.ytd-app {
+  background-color: var(--background-color) !important;
+  border-bottom: 1px solid black !important;
+}
+
+#guide-links-primary.ytd-guide-renderer,
+#guide-links-secondary.ytd-guide-renderer,
+#footer.ytd-guide-renderer > #copyright,
+#container.ytd-searchbox,
+.sbsb_a, .sbdd_b, .sbfl_b {
+  background-color: var(--background-color) !important;
+}
+
+#footer.ytd-guide-renderer > #copyright, a {
+  color: var(--svg) !important;
+}
+
+#newness-dot.ytd-guide-entry-renderer {
+  background-color: var(--icon) !important;
+}
+
+#video-title.ytd-video-renderer,
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text,
+ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer,
+yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string,
+#author-text.yt-simple-endpoint.ytd-comment-renderer,
+.sbfl_b, .sbdd_b b {
+  color: var(--font) !important;
+}
+
+.ytp-swatch-background-color {
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+ytd-searchbox[desktop-searchbar-style=rounded_corner_borders_light_btn] #container.ytd-searchbox,
+ytd-searchbox[has-focus] #container.ytd-searchbox,
+.sbsb_a, .sbdd_b {
+  border-radius: 5px !important;
+  border: 1px solid var(--svg) !important;
+}
+
+a.yt-simple-endpoint.yt-formatted-string,
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text {
+  color: var(--background-color) !important;
+}
+
+.ytp-swatch-background-color:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #fbd200, #52dd3d, #1996d7, #ed0074) !important;
+  background-size: 400%;
+  filter: blur(5px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.ytp-swatch-background-color:before {
+  filter: blur(5px);
+  opacity: 1;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+.ytd-searchbox:hover {
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.ytd-searchbox:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #fbd200, #52dd3d, #1996d7, #ed0074) !important;
+  background-size: 400%;
+  filter: blur(30px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.ytd-searchbox:hover:before {
+  filter: blur(30px);
+  opacity: 1;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+.glow:hover {
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+.glow:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #fbd200, #52dd3d, #1996d7, #ed0074) !important;
+  background-size: 400%;
+  filter: blur(30px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.glow:hover:before {
+  filter: blur(30px);
+  opacity: 1;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}/*# sourceMappingURL=styles.css.map */
